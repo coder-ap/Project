@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Control Budget</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <body>
+        
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Control Budget</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+          <a class="nav-link" href="About%20Us.html">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Change%20Password.html">Change Password</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home%20Page.html">Logout</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<br>
+        
+        
+        <form action="x1.php" method="POST">
+  <div class="sign-up-form">
+    <p>ADD NEW EXPENSE</p>
+    <hr>
+     
+      
+      
+      <label for="name"><b>Title</b></label>
+    <input type="text" class="input-box" placeholder="Name" name="name" required>
+
+    <label for="Date"><b>Date</b></label>
+    <input type="date" class="input-box" placeholder="Enter Date" name="Date" required>
+
+    <label for="Amt"><b>Amount spend</b></label>
+    <input type="number" class="input-box" placeholder="Enter Amount" name="Amt" required>
+      
+      <label for="phn"><b>Phone No</b></label>
+    <input type="tel" class="input-box" placeholder="Enter Valid Phone Number(Ex:- 5555899999)" name="phn" required>
+      
+      <label for="ub"><b>Upload Bill</b></label>
+    <br><input type="file" class="sample_class" class="input-box" name="sample_name">
+
+    <br><div class="container">
+      <button type="submit"  class="btn btn-primary btn-block">Sign Up</button>
+    </div>
+  </div>
+</form>
+        
+        <footer class="page-footer font-small" id="X">
+
+  
+            <div class=" text-center py-3">Copyright © Control Budget. All Rights Reserved|Contact Us: +91-8448444853.</div>
+    
+  
+
+</footer>
+    </body>
+    </head>
+</html>

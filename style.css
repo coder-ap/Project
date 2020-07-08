@@ -1,0 +1,223 @@
+.header
+{
+    background-color:black;    
+    color:#fff;     
+    border-color: #080808;    
+    min-height: 50px;    
+    border: 1px solid transparent; 
+}
+
+.sign-up-form
+{
+    width: 500px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: white;
+    padding: 20px;
+    margin: 8% auto;
+    text-align: center;
+}
+.input-box
+{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.logo
+{
+    background-color: black;
+}
+
+.inner-header
+{
+     width:80%;   
+    margin:auto; 
+}
+
+.STYLE
+{
+    float: left;
+    font-size: 14px;
+    height: 50px;
+    padding: 15px 10px;
+    font-weight: bold;
+    color:silver;
+    text-decoration: none;
+    
+}
+
+li a{
+      float: right; 
+    font-size:14px;    
+        
+       
+       
+    font-weight: bold;
+    color: silver;
+    text-decoration: none;
+    text-decoration-style: wavy;
+}
+.banner-image
+{
+    min-height: 600px;
+    padding : 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    background: url(IMG_1.jpg);
+    background-size: cover;
+    
+}
+
+
+.inner-banner-image
+{
+     padding-top: 12%;
+    width:80%;    
+    margin:auto; 
+    
+}
+
+.banner-content
+{
+    position: relative;    
+    padding-top: 6%;  
+    padding-bottom: 6%;   
+    overflow:hidden;    
+    margin-bottom: 12%;  
+    background-color: rgba(0, 0, 0, 0.7);  
+    max-width: 660px;
+}
+
+.items
+{
+    width:30%;   
+    display:block;   
+    padding: 4px;   
+    margin-bottom: 20px;  
+      line-height: 1.42857143;
+    background-color: #fff;   
+    border: 1px solid #ddd;  
+    border-radius: 4px;   
+    float:left;   
+    margin-left:1%; 
+}
+
+h1
+{
+    font-family:sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+p
+{
+    font-display: optional;
+    color: black;
+    text-decoration: none;
+}
+
+#B
+{
+     color:white;   
+    background-color: skyblue;  
+    border-color: #ac2925;   
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);  
+    padding: 10px 16px;    
+    font-size: 18px;   
+    border-radius: 6px; 
+}
+
+.class_container
+{
+    width:50%;    
+    margin:auto;   
+    overflow:hidden; 
+    background-color: white;
+}
+
+.thumbnail
+{
+      display:block;    
+    max-width: 100%;   
+    height: auto; 
+}
+
+.caption
+{
+      color:#000;    
+    padding:0px 10px 10px;   
+    font-weight: bold;    
+    text-align: center; 
+    text-decoration:none;
+}
+
+#X
+{
+    background-color: black;
+    color:silver;
+    
+}
+
+.New
+{
+    color: yellow;
+}
+
+
+
+
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+/* Set a style for all buttons */
+.container {
+  padding: 16px;
+}
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+#P
+{
+    float: left;
+    position: relative;
+}
+
+function GetImageExtension($imagetype){
+if(empty($imagetype)) return false;
+switch($imagetype){
+case 'image/bmp': return '.bmp';
+case 'image/gif': return '.gif';
+case 'image/jpeg': return '.jpg';
+case 'image/png': return '.png';
+default: return false;
+}
+}
+if (!empty($_FILES["uploadedimage"]["name"])) {
+$file_name=$_FILES["uploadedimage"]["name"];
+$temp_name=$_FILES["uploadedimage"]["tmp_name"];
+$imgtype=$_FILES["uploadedimage"]["type"];
+$ext= GetImageExtension($imgtype);
+$imagename=date("d-m-Y")."-".time().$ext;
+$target_path = "img/".$imagename;
+if(move_uploaded_file($temp_name, $target_path)){
+// Make a query
+    }
+}
+
+
+
+
